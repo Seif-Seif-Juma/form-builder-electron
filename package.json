@@ -1,0 +1,37 @@
+{
+  "name": "form-builder-electron",
+  "version": "1.0.0",
+  "description": "Offline-first form builder with XLSForm compatibility",
+  "main": "src/main/main.ts",
+  "scripts": {
+    "start": "electron .",
+    "dev:vite": "vite",
+    "dev:electron": "wait-on tcp:5173 && electron -r ts-node/register .",
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:electron\"",
+    "build": "tsc && vite build",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "electron-store": "^8.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "concurrently": "^8.0.1",
+    "electron": "^25.0.0",
+    "electron-builder": "^24.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0",
+    "wait-on": "^7.2.0"
+  }
+}

@@ -1,0 +1,16 @@
+form-builder-electron/
+├── package.json
+├── src/
+│   ├── main/
+│   │   └── main.ts                 # Main Electron process
+│   ├── renderer/
+│   │   ├── components/
+│   │   │   ├── FormBuilder/
+│   │   │   ├── FormPreview/
+│   │   │   └── XLSFormConverter/
+│   │   ├── styles/
+│   │   └── index.html
+│   └── shared/
+│       └── types/
+├── public/
+└── electron-builder.json
